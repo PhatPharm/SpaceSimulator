@@ -290,25 +290,6 @@ public class Drawer extends JComponent {
 		return starClicked;
 	}
 	
-//	public boolean clickedPlanet() {
-//		boolean planetClicked = false;
-//		for(int i = 0; i < stars.get(0).planetList.size(); i++) {
-//			int leftEdge = Display.width/2 - stars.get(0).planetList.get(i).getDiameter()/2;
-//			int rightEdge = Display.width/2 + stars.get(0).planetList.get(i).getDiameter()/2;
-//			int topEdge = Display.height/2 - stars.get(0).planetList.get(i).getDiameter()/2;
-//			int bottomEdge = Display.height/2 + stars.get(0).planetList.get(i).getDiameter()/2;
-//
-//			if(mouseX < rightEdge && mouseX > leftEdge && mouseY < topEdge && mouseY > bottomEdge) { 
-//				planetClicked = true;
-//				PlanetInformationPanel pPanel = new PlanetInformationPanel(0, 0, 250, 250);
-//				pPanel.setInfo(stars.get(0).planetList.get(i));
-//				System.out.println("You have clicked the planet.");
-//			}
-//		}
-//		
-//		return planetClicked;
-//	}
-	
 	
 	public void updateTransform() {
 		rotation += 10;
