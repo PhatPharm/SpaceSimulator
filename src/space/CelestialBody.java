@@ -1,5 +1,6 @@
-package creation;
+package space;
 
+import creation.Display;
 import java.util.Random;
 
 public class CelestialBody {
@@ -10,9 +11,8 @@ public class CelestialBody {
   double mass;
   double gravity;
   Random r = new Random();
-  int centerX = this.getX();
-  int centerY = this.getY();
-  int velocity;
+  public int centerX = this.getX();
+  public int centerY = this.getY();
 
   CelestialBody() {
     x = Display.width / 2;//r.nextInt(maxX - minX) + minX;

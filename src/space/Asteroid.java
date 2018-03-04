@@ -1,5 +1,6 @@
-package creation;
+package space;
 
+import creation.Display;
 import java.util.Random;
 
 
@@ -11,7 +12,7 @@ public class Asteroid extends CelestialBody {
   int y;
   int size;
 
-  public Asteroid() {
+  Asteroid() {
     x = 0;
     y = r.nextInt(Display.height);
     Random sizeR = new Random();

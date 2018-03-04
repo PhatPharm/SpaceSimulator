@@ -1,4 +1,4 @@
-package creation;
+package space;
 
 import java.awt.Color;
 import java.awt.Graphics2D;
@@ -6,11 +6,11 @@ import java.awt.Graphics2D;
 public class Moon extends CelestialBody {
 
   private double angle = Math.random() * Math.PI * 2;
-  int sizeDiameter;
+  public int sizeDiameter;
 
-  double speed = 0.1;
+  public double speed = 0.1;
 
-  Color moonColor;
+  public Color moonColor;
 
   Moon() {
     sizeDiameter = 15;

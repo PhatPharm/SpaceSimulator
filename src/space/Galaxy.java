@@ -1,5 +1,6 @@
-package creation;
+package space;
 
+import creation.Display;
 import java.util.ArrayList;
 import java.util.Random;
 
@@ -9,9 +10,8 @@ public class Galaxy {
   private ArrayList<Star> stars = new ArrayList<>();
   Random random = new Random();
 
-  private int numStars = 1;//random.nextInt(12) + 2; 		//ERROR: for some reason, number of stars displayed is always numStars/2.... :(
-
   public ArrayList<Star> createGalaxy() {
+    int numStars = 1;
     for (int i = 0; i <= numStars; i++) {
       star = new Star();
       star.createName();

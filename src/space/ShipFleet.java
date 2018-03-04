@@ -1,14 +1,14 @@
-package creation;
+package space;
 
 import java.util.ArrayList;
 
 public class ShipFleet {
 
-  ArrayList<Ship> shipList;
+  public ArrayList<Ship> shipList;
   private boolean allReached = false;
 
 
-  ShipFleet() {
+  public ShipFleet() {
     shipList = new ArrayList<>();
   }
 

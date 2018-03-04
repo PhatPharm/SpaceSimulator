@@ -1,5 +1,6 @@
-package creation;
+package space;
 
+import creation.Display;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -9,11 +10,11 @@ import java.util.Random;
 public class Star extends CelestialBody {
 
   Graphics2D g;
-  Color starColor;
-  int oX = this.getX();      //returns center x of orbit path
-  int oY = this.getY();      //returns center y of orbit path
-  ArrayList<Planet> planetList;
-  String nameOfStar;
+  public Color starColor;
+  public int oX = this.getX();      //returns center x of orbit path
+  public int oY = this.getY();      //returns center y of orbit path
+  public ArrayList<Planet> planetList;
+  public String nameOfStar;
   private Random r = new Random();
   private int spec = r.nextInt(SpectralType.values().length);      //pick a random
   private SpectralType spectralType = SpectralType.values()[spec];    //spectral type

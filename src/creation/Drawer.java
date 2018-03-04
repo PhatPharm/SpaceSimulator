@@ -10,6 +10,12 @@ import java.util.Random;
 import javax.swing.JButton;
 import javax.swing.JComponent;
 import javax.swing.JLabel;
+import space.Asteroid;
+import space.AsteroidCluster;
+import space.Galaxy;
+import space.ShipFleet;
+import space.Star;
+import space.Universe;
 
 @SuppressWarnings("serial")
 public class Drawer extends JComponent {
@@ -17,7 +23,7 @@ public class Drawer extends JComponent {
   private boolean justStarted = true;
   private boolean starClicked = false;
   private int cumulativeTime = 0;
-  private creation.ShipFleet fleet;
+  private ShipFleet fleet;
   private ArrayList<Galaxy> universe;// = createUniverse();
   private ArrayList<Star> stars;// = createGalaxy();
   private JLabel starName;
@@ -30,17 +36,14 @@ public class Drawer extends JComponent {
 
   private Display display;
 
-  private AffineTransform rotationTransform;
-  private AffineTransform transform;
-
   Drawer(Display d) {
     display = d;
     universe = createUniverse();
     stars = createGalaxy();
     setNameLabel(stars.get(0));
     ArrayList<Asteroid> cluster = createCluster();
-    transform = new AffineTransform();
-    rotationTransform = new AffineTransform();
+    AffineTransform transform = new AffineTransform();
+    AffineTransform rotationTransform = new AffineTransform();
     fleet = createFleet();
   }
 
@@ -85,8 +88,6 @@ public class Drawer extends JComponent {
             star1.nameOfStar + " | Planets: " + star1.planetList.size();
         star1
             .createCircle(g2d, star1.getDiameter(), star1.getColor(), starStr);
-        int xAnc = star1.centerX;
-        int yAnc = star1.centerY;
         for (int planet = 0; planet < star1.planetList.size(); planet++) {
           planetStr = star1.planetList.get(planet).nameOfPlanet;
 

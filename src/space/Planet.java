@@ -1,5 +1,6 @@
-package creation;
+package space;
 
+import creation.Display;
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics2D;
@@ -7,15 +8,15 @@ import java.util.Random;
 
 public class Planet extends CelestialBody {
 
-  int orbitDiameter;
-  double speed = 0.01;
+  public int orbitDiameter;
+  public double speed = 0.01;
   double trueSpeed = 0.01;
-  String nameOfPlanet;
-  int chanceOfMoon;
-  Moon moon;
-  int pX;
-  int pY;
-  boolean hasMoon;
+  public String nameOfPlanet;
+  public int chanceOfMoon;
+  public Moon moon;
+  public int pX;
+  public int pY;
+  public boolean hasMoon;
   private Random r = new Random();
   private int type = r.nextInt(PlanetType
       .values().length);    //pick a random									//D: planetoids (asteroids/small moons)

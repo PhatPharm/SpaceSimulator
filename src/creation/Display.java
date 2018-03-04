@@ -13,8 +13,8 @@ import javax.swing.WindowConstants;
 //public class Display extends JFrame implements MouseListener {
 public class Display extends JFrame {
 
-  static int width;
-  static int height;
+  public static int width;
+  public static int height;
 
   private Display() {
     width = 2000;

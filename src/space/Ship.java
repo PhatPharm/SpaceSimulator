@@ -1,4 +1,4 @@
-package creation;
+package space;
 
 import java.awt.Color;
 import java.awt.Font;
@@ -15,10 +15,10 @@ public class Ship {
 
   private int[] xcoors = new int[3];
   private int[] ycoors = new int[3];
-  int speed = 10;
+  public int speed = 10;
 
   private int totalPoints;
-  Planet target;
+  public Planet target;
 
   private boolean reachedPlanet = false;
 
